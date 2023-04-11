@@ -1,0 +1,47 @@
+{
+  "applications": ["Coopcycle"],
+  "changelogDate": "20230409201011",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "restorateur",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "theme",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "options",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Restorateur",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "panier",
+      "otherEntityRelationshipName": "restname",
+      "relationshipName": "panier",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "societaire",
+      "otherEntityRelationshipName": "restorateur",
+      "relationshipName": "listname",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,57 @@
+{
+  "applications": ["Coopcycle"],
+  "changelogDate": "20230409201013",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "societaire",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "directeur",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Societaire",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "restorateur",
+      "otherEntityRelationshipName": "listname",
+      "relationshipName": "restorateur",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "livreurs",
+      "otherEntityRelationshipName": "listname",
+      "relationshipName": "livreurs",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "listname",
+      "relationshipName": "client",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cooperativeLocal",
+      "otherEntityRelationshipName": "socname",
+      "relationshipName": "coopname",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "conseil",
+      "relationshipName": "consname",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

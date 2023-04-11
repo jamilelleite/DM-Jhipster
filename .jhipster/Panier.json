@@ -1,0 +1,41 @@
+{
+  "applications": ["Coopcycle"],
+  "changelogDate": "20230409201015",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "panier",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Panier",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "restorateur",
+      "otherEntityRelationshipName": "panier",
+      "relationshipName": "restname",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "panier",
+      "relationshipName": "cliname",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

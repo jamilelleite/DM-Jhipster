@@ -1,0 +1,26 @@
+{
+  "coopcycleApp": {
+    "cooperativeNational": {
+      "home": {
+        "title": "CooperativeNationals",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Cooperative National",
+        "createOrEditLabel": "Créer ou éditer un Cooperative National",
+        "notFound": "Aucun Cooperative National trouvé"
+      },
+      "created": "Un nouveau Cooperative National a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Cooperative National avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Cooperative National avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Cooperative National {{ id }} ?"
+      },
+      "detail": {
+        "title": "Cooperative National"
+      },
+      "id": "ID",
+      "name": "Name",
+      "fournisseur": "Fournisseur",
+      "coopLo": "Coop Lo"
+    }
+  }
+}

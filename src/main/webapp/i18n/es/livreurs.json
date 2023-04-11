@@ -1,0 +1,25 @@
+{
+  "coopcycleApp": {
+    "livreurs": {
+      "home": {
+        "title": "Livreurs",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Livreurs",
+        "createOrEditLabel": "Crear o editar Livreurs",
+        "notFound": "Ningún Livreurs encontrado"
+      },
+      "created": "Un nuevo Livreurs ha sido creado con el identificador {{ param }}",
+      "updated": "Un Livreurs ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Livreurs ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Livreurs {{ id }}?"
+      },
+      "detail": {
+        "title": "Livreurs"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "listname": "Listname"
+    }
+  }
+}

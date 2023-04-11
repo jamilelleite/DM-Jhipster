@@ -1,0 +1,39 @@
+{
+  "applications": ["Coopcycle"],
+  "changelogDate": "20230409201010",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Client",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "panier",
+      "otherEntityRelationshipName": "cliname",
+      "relationshipName": "panier",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "societaire",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "listname",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

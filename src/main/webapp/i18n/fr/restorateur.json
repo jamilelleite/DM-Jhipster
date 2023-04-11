@@ -1,0 +1,29 @@
+{
+  "coopcycleApp": {
+    "restorateur": {
+      "home": {
+        "title": "Restorateurs",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Restorateur",
+        "createOrEditLabel": "Créer ou éditer un Restorateur",
+        "notFound": "Aucun Restorateur trouvé"
+      },
+      "created": "Un nouveau Restorateur a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Restorateur avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Restorateur avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Restorateur {{ id }} ?"
+      },
+      "detail": {
+        "title": "Restorateur"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "theme": "Theme",
+      "zone": "Zone",
+      "options": "Options",
+      "panier": "Panier",
+      "listname": "Listname"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "coopcycleApp": {
+    "cooperativeLocal": {
+      "home": {
+        "title": "Cooperative Locals",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cooperative Local",
+        "createOrEditLabel": "Create or edit a Cooperative Local",
+        "notFound": "No Cooperative Locals found"
+      },
+      "created": "A new Cooperative Local is created with identifier {{ param }}",
+      "updated": "A Cooperative Local is updated with identifier {{ param }}",
+      "deleted": "A Cooperative Local is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cooperative Local {{ id }}?"
+      },
+      "detail": {
+        "title": "Cooperative Local"
+      },
+      "id": "ID",
+      "name": "Name",
+      "zone": "Zone",
+      "coopNaname": "Coop Naname",
+      "socname": "Socname"
+    }
+  }
+}

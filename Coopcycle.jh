@@ -1,0 +1,69 @@
+application {
+  config {
+    baseName Coopcycle
+    applicationType monolith
+    databaseType sql
+    prodDatabaseType postgresql
+    clientFramework react
+    clientTheme darkly
+    languages [en,fr,es,de,it]
+    serverPort 8080
+  }
+  entities Client, Restorateur, Livreurs, Societaire, Conseil, Panier, CooperativeNational, CooperativeLocal
+  dto * with mapstruct
+}
+
+
+entity Client {
+  name String required
+  address String
+}
+entity Restorateur {
+  nom String required
+  theme String
+  zone String
+  options String
+}
+entity Livreurs {
+  nom String required
+}
+entity Societaire {
+  nom String required
+  directeur String
+}
+
+entity Conseil {
+  nom String required
+}
+
+entity Panier {
+  name String pattern(/^[A-Z][a-z]+\d$/) required
+  price Long required
+}
+
+entity CooperativeLocal {
+  name String pattern(/^[A-Z][a-z]+\d$/) required
+  zone String pattern(/^[A-Z][a-z]+\d$/) required
+}
+
+entity CooperativeNational {
+  name String required
+  fournisseur String pattern(/^[A-Z][a-z]+\d$/) required
+}
+
+relationship OneToMany {
+  Societaire to Restorateur{listname required}
+  Societaire to Livreurs{listname required}
+  Societaire to Client{listname required}
+  Restorateur to Panier{restname required}
+  Client to Panier{cliname required}
+
+}
+
+relationship ManyToOne {
+  Societaire{coopname required} to CooperativeLocal {socname required}
+  Societaire{consname required} to Conseil
+  CooperativeLocal{coopNaname required} to CooperativeNational {coopLo required}
+}
+
+paginate * with infinite-scroll
